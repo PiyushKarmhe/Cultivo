@@ -168,23 +168,31 @@ top: 600px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
-    transform: rotate(-5.2deg);
+    /* transform: rotate(-5.2deg); */
 }
 .ellipse2 {
     position: absolute;
     width: 250px;
     height: 57px;
-    bottom: -49px;
+    bottom: -53px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
-    transform: rotate(5.2deg);
+    /* transform: rotate(5.2deg); */
 }
 .more p {
     position: absolute;
     width: 180px;
     height: 34px;
-    bottom: -45px;
+    bottom: -49px;
+}
+
+.more:hover .ellipse1{
+    transform: rotate(-5.2deg);
+}
+
+.more:hover .ellipse2{
+    transform: rotate(5.2deg);
 }
 
 .options {
