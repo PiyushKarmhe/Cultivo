@@ -10,7 +10,8 @@ body{
 
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     overflow-x: hidden;
     color:white;
     /* background: url(../img/filter.svg); */
@@ -18,18 +19,20 @@ main{
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    
 }
 
 .center {
     position: relative;
     width: 1030px;
-    height: 500px;
-    left: 100px;
-    top: 100px;
+    height: 75vh;
+    /* left: 100px; */
+    top: 65px;
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 30px;
+    margin-left:50px ;
 }
 .title {
     position: relative;
@@ -63,12 +66,15 @@ main{
     width: 50vw;
     display: flex;
     position: relative;
-    left: 80px;
+    /* left: 80px; */
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 37px;
+    margin: auto;
     text-align: center;
+    align-content: stretch;
+    /* text-align: center; */
 }
 .sub p {
     position: relative;
@@ -89,9 +95,13 @@ main{
     width: 72px;
     height: 54px;
     background: rgba(217, 217, 217, 0.34);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 35%);
     border-radius: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
 }
+
 
 .place {
     position: relative;
