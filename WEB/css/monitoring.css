@@ -1,0 +1,83 @@
+body{
+    background: url(../img/liubov-ilchuk-_6rR_iP06p4-unsplash\ 1\ \(1\).png);
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    color:white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color:white;
+    /* background: url(../img/filter.svg); */
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.center {
+    position: relative;
+    width: 1030px;
+    height: 500px;
+    left: 100px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+.title {
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    left: 200px;
+    top: 0px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.36);
+    opacity: 0.4;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 0px 0px 30px 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title h2 {
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #0f3b1c;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+.title h2:hover {
+    cursor: pointer;
+    text-decoration: underline red;
+}
+
+.down{
+    position: absolute;
+    width: 141px;
+    height: 250px;
+    left: 20px;
+    bottom: 15px;
+    background: rgba(8, 11, 0, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+}
+.insta {
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+.git {
+position: absolute;
+left: 40px;
+top: 150px;
+}

@@ -1,5 +1,5 @@
 body{
-    background: url(../img/liubov-ilchuk-_6rR_iP06p4-unsplash\ 1.png);
+    background: url(../img/third.png);
     background-position:center;
     background-size:cover;
     display: flex;
@@ -13,7 +13,7 @@ main{
     flex-direction: column;
     overflow-x: hidden;
     color:white;
-    /* background: url(../img/filter.svg); */
+    background: url(../img/filter.svg);
     background-position: center;
     background-size: cover;
     width: 100vw;
