@@ -17,6 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 100px;
+    transition: all ease-in-out 250ms;
 }
 .nav p:hover {
     cursor: pointer;
@@ -117,9 +118,9 @@ aside{
     top: 480px;
 }
 .git {
-position: absolute;
-left: 80px;
-top: 600px;
+    position: absolute;
+    left: 80px;
+    top: 600px;
 }
 
 .center {
@@ -127,6 +128,7 @@ top: 600px;
     font-weight: 400;
     text-align: center;
 }
+
 .center h1 {
     width: 70vw;
     font-family: 'Aclonica';
@@ -154,21 +156,18 @@ top: 600px;
     justify-content: center;
     align-items: center;
     position: relative;
-}
-.more:hover{
     cursor: pointer;
-    color: red 
 }
-.ellipse1 {
 
+.ellipse1 {
     position: absolute;
     width: 250px;
     height: 57px;
-     bottom: -53px;
+    bottom: -53px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
-    /* transform: rotate(-5.2deg); */
+    transition: all ease-out 400ms;
 }
 .ellipse2 {
     position: absolute;
@@ -178,7 +177,7 @@ top: 600px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
-    /* transform: rotate(5.2deg); */
+    transition: all ease-out 400ms;
 }
 .more p {
     position: absolute;
@@ -215,6 +214,7 @@ top: 600px;
   opacity: 1.11;
   border-radius: 15px;
   text-align: center;
+  transition: all ease-out 300ms;
 }
 .box:hover {
     cursor: pointer;
