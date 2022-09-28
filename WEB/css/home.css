@@ -128,24 +128,19 @@ top: 600px;
     text-align: center;
 }
 .center h1 {
-    position: absolute;
-    width: 853px;
-    height: 63px;
-    left: 350px;
-    top: 170px;
+    width: 70vw;
     font-family: 'Aclonica';
-    font-size: 56px;
-    line-height: 63px;
+    font-size: 4vw;
+    line-height: 8rem;
 }
 .center p {
-    position: absolute;
-    width: 804px;
-    height: 83px;
-    left: 360px;
-    top: 240px;
+    position: relative;
+    bottom: 36px;
+    margin: 20px;
+    width: 65vw;
     font-family: 'Abel';
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 2vw;
+    line-height: 2rem;
     letter-spacing: 0.06em;
 }
 
@@ -153,6 +148,12 @@ top: 600px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .more:hover{
     cursor: pointer;
@@ -163,8 +164,7 @@ top: 600px;
     position: absolute;
     width: 250px;
     height: 57px;
-    left: 615px;
-    top: 350px;
+     bottom: -53px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
@@ -174,8 +174,7 @@ top: 600px;
     position: absolute;
     width: 250px;
     height: 57px;
-    left: 615px;
-    top: 350px;
+    bottom: -49px;
     border-radius: 50%;
     background: rgba(217, 217, 217, 0.08);
     border: 1px solid #FFFFFF;
@@ -185,8 +184,7 @@ top: 600px;
     position: absolute;
     width: 180px;
     height: 34px;
-    left: 657px;
-    top: 370px;
+    bottom: -45px;
 }
 
 .options {
@@ -194,17 +192,19 @@ top: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    top: 50%;
-    gap: 20px;
+    /* bottom: 9px; */
+    top: 92px;
+    /* gap: 20px; */
     padding: 0px;
     margin: 0px;
+    /* right: 242px; */
 }
 .box {
   position: relative;
   width: 243px;
   height: 243px;
-  background: linear-gradient(180deg, rgba(45, 47, 46, 0.64) 0%, rgba(130, 125, 117, 0.93) 100%);
-  opacity: 0.41;
+  background: linear-gradient(180deg, rgba(45, 47, 46, 0.24) 0%, rgba(130, 125, 117, 0.53) 100%);
+  opacity: 1.11;
   border-radius: 15px;
   text-align: center;
 }
