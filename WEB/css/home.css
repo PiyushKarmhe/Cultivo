@@ -220,6 +220,12 @@ aside{
     cursor: pointer;
     transform: scale(1.08);
 }
+.box a{
+    text-decoration: none;
+}
+.box a:hover {
+    text-decoration: none;
+}
 .box p {
     position: relative;
     font-family: 'Arbutus Slab';
