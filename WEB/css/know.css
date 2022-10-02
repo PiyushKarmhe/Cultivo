@@ -1,0 +1,145 @@
+.abot {
+    height: 100vh;
+    width: 100%;
+}
+
+.know {
+    width: 98vw;
+    border-top: 3.5px solid rgb(197, 68, 68);
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.know span {
+    width: 10vw;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(225, 14, 14);
+    position: relative;
+    right: 400px;
+    bottom: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+.left {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 25px;
+    gap: 40px;
+    top: 90px;
+    left: 40px;
+    text-align: center;
+}
+
+.about_us {
+    width: 16vw;
+    height: 21vh;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    background: rgb(8 11 0 / 3%);
+    box-shadow: 0px 4px 4px rgb(0 0 0);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+.about_us h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+.about_us p {
+    font-size: 18px;
+    font-size: 600;
+    margin: 12px;
+    line-height: 1;
+}
+.about_us p:hover {
+    cursor: pointer;
+    text-decoration:underline black;
+}
+
+.policies {
+    border: none;
+    border-radius: 10px;
+    width: 16vw;
+    height: 44vh;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
+    background: rgb(8 11 0 / 3%);
+    box-shadow: 0px 4px 4px rgb(0 0 0);
+    backdrop-filter: blur(2px);
+}
+.policies h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+.policies p {
+    font-size: 18px;
+    font-size: 600;
+    margin: 12px;
+    line-height: 1;
+}
+.policies p:hover {
+    cursor: pointer;
+    text-decoration:underline black;
+}
+
+
+
+.para {
+    text-align: center;
+    position: relative;
+    display: flex;
+    bottom: 87vh;
+    left: 3vw;
+    line-height: 2.5;
+    width: 84vh;
+    height: 50vh;
+    font-size: 20px;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.para .a{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+    color: forestgreen;
+}
+
+
+.down{
+    position: absolute;
+    width: 141px;
+    height: 250px;
+    right: 2rem;
+    bottom: 159px;
+    margin: auto;
+    background: rgb(8 11 0 / 3%);
+    box-shadow: 0px 4px 4px rgb(0 0 0);
+    backdrop-filter: blur(2px);
+    border-radius: 24px;
+}
+.insta {
+    position: relative;
+    left: 40px;
+    top: 40px;
+}
+.git {
+position: absolute;
+left: 40px;
+top: 150px;
+}
