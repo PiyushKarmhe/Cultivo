@@ -46,9 +46,9 @@ app.post(`/manual.html/pred`,(req,res)=>{
     // }
 
     const data = req.body
-    // console.log(res.getHeaders());
 
     let stringifiedData = JSON.stringify(data);
+    console.log(stringifiedData);
 
     const py = spawn('python', ['PYTHON/model.py', stringifiedData]);
 
