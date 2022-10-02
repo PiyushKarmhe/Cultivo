@@ -28,12 +28,16 @@ filename = os.path.join(dirname, '../ML/scaler.pickle')
 with open(filename, 'rb') as handle:
     scaler = pickle.load(handle)
 
-# data = json.loads(sys.argv[1])  
-# data = data['params'] 
-data = [30,28,30,32,52,5,98]
+data = json.loads(sys.argv[1])  
+data = data['params'] 
+# data = [30,28,30,32,52,5,98]
 
 test = scaler.transform(np.array([data]))
 prediction = np.argmax(model.predict(test))
 enablePrint()
 
-print(labels[prediction])
+# print(labels[prediction])
+
+newdata = {'result':labels[prediction]}
+
+print(json.dumps(newdata))

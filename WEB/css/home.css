@@ -29,7 +29,7 @@
 .nav p:hover {
     cursor: pointer;
     transform: scale(1.08);
-    color: red;
+    color: #629e32;
 }
 
 .nav p {
