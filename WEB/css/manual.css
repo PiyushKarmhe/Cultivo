@@ -191,10 +191,13 @@ top: 150px;
     width: 929px;
     height: 20vh;
     /* left: 100px; */
-    top: 140px;
+    /* top: 140px; */
     background: rgb(255 255 255 / 34%);
     box-shadow: 0px 4px 4px rgb(0 0 0);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-bottom: 100px;
 }
