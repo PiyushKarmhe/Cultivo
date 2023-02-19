@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,45 +11,54 @@
     <link rel="stylesheet" href="/WEB/css/social.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-
     <title>Best crop</title>
 </head>
+
 <body>
     <main>
         <section class="top">
             <nav>
-            <div class="nav">
-                <p>Home</p>
-                <p>About</p>
-                <div class="nav_center">
-                    <img src="/WEB/img/Logo_web.png" alt="">
+                <div class="nav">
+                    <p><a href="/">Home</a></p>
+                    <p><a href="./know.html">About</a></p>
+                    <div class="nav_center">
+                        <img src="/WEB/img/Logo_web.png" alt="">
+                    </div>
+                    <p>Service</p>
+                    <p>Help</p>
                 </div>
-                <p>Service</p>
-                <p>Help</p>
-            </div>
-            <div class="borders">
-                <div class="b-left"></div>
-                <div class="b-right"></div>
-            </div>
-        </nav>
+                <div class="borders">
+                    <div class="b-left"></div>
+                    <div class="b-right"></div>
+                </div>
+            </nav>
 
-        <div class="center">
-            <div class="title">
-                <h2>Crop Info</h2>
-            </div>
+            <div class="center">
+                <div class="title">
+                    <h2>Crop Info</h2>
+                </div>
 
-            
-            <div class="place">
-                <p> Crop <input type="text"> </p>
-                <div class="btn">
-                    <button type="submit"> Submit</button>
+
+                <div class="place">
+                    <p> Crop <input type="text" id="crop"> </p>
+                    <div class="btn">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
                 </div>
             </div>
-            
-        </div>
+            <div id="res_head"><u>Result</u></div>
+            <section class="result">
+                <div id="N">Nitrogen: </div>
+                <div id="P">Phosphorus: </div>
+                <div id="K">Potassium: </div>
+                <div id="hum">Humidity: </div>
+                <div id="rain">Rainfall: </div>
+                <div id="temp">Temperature: </div>
+               <div id="ph"> pH: </div>
+            </section>
         </section>
-        
 
+        <script src="/WEB/js/info.js"></script>
         <div class="down">
             <div class="insta">
                 <i class="fa fa-instagram" id="insta" aria-hidden="true"></i>
@@ -58,6 +68,7 @@
             </div>
         </div>
     </main>
-    
+
 </body>
+
 </html>

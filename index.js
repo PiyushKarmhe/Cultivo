@@ -33,7 +33,68 @@ app.get(`/monitoring.html`,(req,res)=>{
     res.sendFile(__dirname+'/WEB/html/monitoring.html');
 });
 
+app.get(`/know.html`,(req,res)=>{
+    res.sendFile(__dirname+'/WEB/html/know.html');
+});
+
+app.get(`/team.html`,(req,res)=>{
+    res.sendFile(__dirname+'/WEB/html/team.html');
+});
+
 app.post(`/manual.html/pred`,(req,res)=>{
+
+    res.set({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Methods': "OPTIONS,POST,GET",
+        'Access-Control-Allow-Origin': "*"
+    });
+
+    const data = req.body
+
+    let stringifiedData = JSON.stringify(data);
+    console.log(stringifiedData);
+
+    const py = spawn('python', ['PYTHON/model.py', stringifiedData]);
+
+    resultString = '';
+    py.stdout.on('data', function (stdData) {
+        resultString += stdData.toString();
+    });
+
+    py.stdout.on('end', function () {
+        console.log(resultString);
+        return res.send(resultString);
+    });
+});
+
+app.post(`/manual.html/bestcrop`,(req,res)=>{
+
+    res.set({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Methods': "OPTIONS,POST,GET",
+        'Access-Control-Allow-Origin': "*"
+    });
+
+
+    const data = req.body
+
+    let stringifiedData = JSON.stringify(data);
+    console.log(stringifiedData);
+
+    const py = spawn('python', ['PYTHON/crop-details.py', stringifiedData]);
+
+    resultString = '';
+    py.stdout.on('data', function (stdData) {
+        resultString += stdData.toString();
+    });
+
+    py.stdout.on('end', function () {
+        console.log(resultString);
+        return res.send(resultString);
+    });
+});
+
+app.post(`/manual.html/test`,(req,res)=>{
 
     res.set({
         'Content-Type': 'application/json',
@@ -50,7 +111,7 @@ app.post(`/manual.html/pred`,(req,res)=>{
     let stringifiedData = JSON.stringify(data);
     console.log(stringifiedData);
 
-    const py = spawn('python', ['PYTHON/model.py', stringifiedData]);
+    const py = spawn('python', ['PYTHON/test.py', stringifiedData]);
 
     resultString = '';
     py.stdout.on('data', function (stdData) {
@@ -63,7 +124,6 @@ app.post(`/manual.html/pred`,(req,res)=>{
         return res.send(resultString);
     });
 });
-
 app.listen(8000,()=>{
     console.log(`Server Started at port : ${8000}`);
 });

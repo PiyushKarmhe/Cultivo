@@ -26,7 +26,13 @@
 .nav a:hover {
     text-decoration: none;
 }
-.nav p:hover {
+.nav p a:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    color: #629e32;
+}
+
+nav p:hover {
     cursor: pointer;
     transform: scale(1.08);
     color: #629e32;
@@ -195,8 +201,10 @@ aside{
     color: white;
 }
 .more a {
-    position: absolute;
-    right: 58%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .more:hover .ellipse1{

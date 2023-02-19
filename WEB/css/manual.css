@@ -1,25 +1,35 @@
-body{
+body {
     background: url(../img/liubov-ilchuk-_6rR_iP06p4-unsplash\ 1.png);
-    background-position:center;
-    background-size:cover;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
-    color:white;
+    color: white;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     overflow-x: hidden;
-    color:white;
+    color: white;
     /* background: url(../img/filter.svg); */
     background-position: center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    
+
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 .center {
@@ -32,8 +42,9 @@ main{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    margin-left:50px ;
+    margin-left: 50px;
 }
+
 .title {
     position: relative;
     width: 600px;
@@ -49,6 +60,7 @@ main{
     justify-content: space-around;
     align-items: center;
 }
+
 .title h2 {
     position: relative;
     font-family: 'ABeeZee';
@@ -58,10 +70,12 @@ main{
     color: #629E32;
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
 }
+
 .title h2:hover {
     cursor: pointer;
     text-decoration: underline red;
 }
+
 .sub {
     width: 50vw;
     display: flex;
@@ -76,6 +90,7 @@ main{
     align-content: stretch;
     /* text-align: center; */
 }
+
 .sub p {
     position: relative;
     display: flex;
@@ -88,6 +103,7 @@ main{
     font-weight: 400;
     font-size: 28px;
 }
+
 .sub input {
     position: relative;
     left: 15px;
@@ -111,6 +127,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .place p {
     position: relative;
     right: 30px;
@@ -120,7 +137,8 @@ main{
     font-weight: 400;
     font-size: 28px;
 }
-.place input{
+
+.place input {
     position: relative;
     left: 15px;
     bottom: 10px;
@@ -131,7 +149,7 @@ main{
     border-radius: 5px;
 }
 
-.btn{
+.btn {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -156,6 +174,7 @@ main{
     text-align: center;
     color: white;
 }
+
 .btn button:hover {
     cursor: pointer;
     transform: scale(1.08);
@@ -164,7 +183,7 @@ main{
 
 
 
-.down{
+.down {
     position: absolute;
     width: 141px;
     height: 250px;
@@ -175,27 +194,33 @@ main{
     backdrop-filter: blur(2px);
     border-radius: 24px;
 }
+
 .insta {
     position: relative;
     left: 40px;
     top: 40px;
 }
+
 .git {
-position: absolute;
-left: 40px;
-top: 150px;
+    position: absolute;
+    left: 40px;
+    top: 150px;
 }
 
+#res1,#res2,#res3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 .result {
     position: relative;
     width: 929px;
-    height: 20vh;
+    height: 40vh;
     background: rgb(255 255 255 / 34%);
     box-shadow: 0px 4px 4px rgb(0 0 0);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     margin-top: 100px;
-    margin-left: auto;
+    margin-left: 100px;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;

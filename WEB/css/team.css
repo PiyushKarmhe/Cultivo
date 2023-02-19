@@ -7,6 +7,16 @@
     padding: 10px;
 }
 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -23,10 +33,10 @@
     position: absolute;
     gap: 9rem;
     margin: 45px;
-    
+
 }
 
-.our-team{
+.our-team {
     text-align: center;
     /* margin-bottom: 100px; */
     z-index: 1;
@@ -37,31 +47,38 @@
     justify-content: center;
     left: 10vw;
 }
-.our-team .pic{
+
+.our-team .pic {
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     width: 262px;
     height: 262px;
 }
-.our-team .pic:after{
+
+.our-team .pic:after {
     content: "";
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.5s ease 0s;
 }
-.our-team:hover .pic:after{ opacity: 1; }
-.our-team .pic img{
+
+.our-team:hover .pic:after {
+    opacity: 1;
+}
+
+.our-team .pic img {
     width: 100%;
     height: auto;
 }
-.our-team .social{
+
+.our-team .social {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -73,9 +90,16 @@
     z-index: 1;
     transition: all 0.5s ease 0s;
 }
-.our-team:hover .social{ opacity: 1; }
-.our-team .social li{ display: inline-block; }
-.our-team .social li a{
+
+.our-team:hover .social {
+    opacity: 1;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
     display: block;
     width: 40px;
     height: 40px;
@@ -88,12 +112,13 @@
     transition: all 0.5s ease 0s;
     text-decoration: none;
 }
-.our-team .social li a:hover{
+
+.our-team .social li a:hover {
     background: #fff;
     color: #000;
 }
 
-.our-team .team-content{
+.our-team .team-content {
     width: 100%;
     height: 98%;
     border-radius: 50%;
@@ -105,23 +130,31 @@
     transition: all 0.5s ease 0s;
 }
 
-.our-team:hover .team-content{ border: 2px dotted #00adae; }
-.our-team .team-info{
+.our-team:hover .team-content {
+    border: 2px dotted #00adae;
+}
+
+.our-team .team-info {
     width: 100%;
     color: #464646;
     position: absolute;
     bottom: 12px;
     left: 0;
 }
-.our-team .title{
+
+.our-team .title {
     font-size: 20px;
     font-weight: 600;
     color: #464646;
     margin: 0 0 5px 0;
     transition: all 0.5s ease 0s;
 }
-.our-team:hover .title{ color: #00adae; }
-.our-team .post{
+
+.our-team:hover .title {
+    color: #00adae;
+}
+
+.our-team .post {
     display: block;
     font-size: 14px;
     color: #464646;

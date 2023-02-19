@@ -1,5 +1,5 @@
 body{
-    background: url(../img/liubov-ilchuk-_6rR_iP06p4-unsplash\ 1\ \(1\).png);
+    background: url(../img/crop2.png);
     background-position:center;
     background-size:cover;
     display: flex;
@@ -19,7 +19,15 @@ main{
     width: 100vw;
     height: 100vh;
 }
+a:link {
+    text-decoration: none;
+    color: white;
+}
 
+a:visited {
+    text-decoration: none;
+    color: white;
+}
 .center {
     position: relative;
     /* width: 1030px; */
