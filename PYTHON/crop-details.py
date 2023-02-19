@@ -6,8 +6,9 @@ import json
 # Picking the recommended conditions for the asked crop
 df = pd.read_csv("ML/Data/Crop_recommendation.csv")
 
-data = json.loads(sys.argv[1])
-data = data["crop"]
+# data = json.loads(sys.argv[1])
+# data = data["crop"]
+data = "coffee"
 data = data.lower().strip()
 dfMean = df[df['label'] == data].describe().loc['mean']
 
@@ -41,5 +42,16 @@ if (any(validation)):
         'pH': "NaN",
         'Rainfall': "NaN",
     }
+else:
+    result = {
+    'N': f"{nValue}",
+    'P': f"{pValue}",
+    'K': f"{kValue}",
+    'Temperature': f"{temp} \u1d52C",
+    'Humidity': f"{humid} gm/m\u00B3",
+    'pH': f"{phValue}",
+    'Rainfall': f"{rain} mm",
+    }
+
 
 print(json.dumps(result))
